@@ -1,0 +1,452 @@
+/*Home*/
+*
+{
+    margin:0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+body
+{
+    background: black;
+    color: white;
+    animation: transitionIn 0.75s;
+}
+
+@keyframes transitionIn
+{
+    from{
+        opacity:0;
+        transform: translateY(-10px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+::-webkit-scrollbar
+{
+    width: 9px;
+}
+
+::-webkit-scrollbar-track
+{
+    background: black; 
+}
+
+::-webkit-scrollbar-thumb
+{
+    background-color: #cfff04;
+    border-radius: 5px;
+}
+
+#header
+{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./images/bg\ 1.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.headtext h1
+{
+    font-size: 60px;
+}
+
+#name
+{
+    color: #cfff04;
+    font-size: 60px;
+}
+
+.container
+{
+    padding: 5px 3.5%;
+}
+
+nav
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo
+{
+    height:90px;
+}
+
+nav ul li
+{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;    
+}
+
+nav ul li a
+{
+    color: white;
+    text-decoration: none;
+    font-size: 23px;
+    position: relative;
+}
+
+nav ul li a::after
+{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: aqua;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after
+{
+    width: 100%;
+}
+
+.headtext
+{
+    margin-top: 20%;
+    font-size: 35px;
+}
+
+/*About*/
+#about
+{
+    padding: 80px 0;
+    color: white;
+}
+
+.row
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-c1
+{
+    flex-basis: 35%;
+}
+
+.about-c1 img
+{
+    height: 80%;
+    border-radius: 15px;
+}
+
+.about-c2
+{
+    flex-basis: 65%;
+}
+
+.about-style
+{
+    font-size: 60px;
+    font-weight: 600;
+    color: #cfff04;
+}
+
+.tab-titles
+{
+    display:flex;
+    margin:20px 0 40px;
+}
+
+#Education a
+{
+    text-decoration: none;
+    color: white;
+    transition: all 0.4s linear;
+}
+
+#Education a:hover
+{
+    color: blue;
+}
+
+.tab-links
+{
+    margin-right:50px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after
+{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: aqua;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;   
+}
+
+.tab-links.tab-links.active-link::after
+{
+    width: 50%;
+}
+
+.tab-content ul li
+{
+    list-style: none;
+    margin: 10px 0;  
+}
+
+.tab-content ul li span
+{
+    color: #cfff04;
+    font-size: 15px;
+}
+
+.tab-content
+{
+    display: none;
+}
+
+.tab-content.active-tab
+{
+    display: block;
+}
+
+/*Contact*/
+.contact-left
+{
+    flex-basis: 35%;
+}
+
+.contact-right
+{
+    flex-basis: 60%;
+}
+
+.contact-left p
+{
+    margin-top: 30px;
+}
+
+.contact-left p i
+{
+    font-size: 35px;
+}
+
+.social-icons a
+{
+    text-decoration: none;
+    font-size: 35px;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover
+{
+    transform: translate(-5px);
+}
+
+.btn
+{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #cfff04;
+    padding: 14px 50px;
+    border-radius: 6px;
+}
+
+.btn.btn2
+{
+    display: inline-block;
+    background: #cfff04;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.contact-right form
+{
+    width: 100%;
+}
+
+form input, form textarea
+{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: white;
+    padding: 15px;
+    margin: 15px 0;
+    color: black;
+    font-size: 20px;
+    border-radius: 6px;
+}
+
+form btn2
+{
+    padding: 14px 60px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+#copyright p
+{
+    width: 100%;
+    text-align: center;
+    padding: 0 0;
+    font-weight: 300;
+    color:#cfff04;
+    font-size: 20px;
+}
+
+form textarea{
+    resize:none;
+}
+
+#msg{
+    color: white;
+    font-size: 20px;
+    display: block;
+}
+
+.material-symbols-outlined
+{
+    color: #cfff04;
+    position: static;
+    bottom: 20px; 
+    right: 20px;
+    font-size: 60px;
+}
+
+.sign{
+    font-family: 'Amiri', serif;
+    font-family: 'Ingrid Darling', cursive;
+    color: white;
+    font-size: 70px;
+}
+
+nav .fa-solid
+{
+    display: none;
+}
+
+@media only screen and (max-width:1024px)
+{
+#header
+{
+	background-image: url(./images/bg\ 2.png);
+}
+
+nav ul li a
+{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    position: relative;
+}
+
+.headtext
+{
+    padding-top: 360px;
+    margin-top: 100%;
+    font-size: 16px;
+}
+
+.headtext h1
+{
+    color: white;
+}
+
+#name
+{
+    color: white;
+}
+
+nav .fa-solid
+{
+    display: block;
+    font-size: 65px;
+}
+
+nav ul
+{
+    background: #cfff04;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    font-size: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+}
+
+nav ul li
+{
+    display: block;
+    margin: 25px;
+}
+
+nav ul li a
+{
+    font-size: 30px;
+    color: black;
+}
+
+nav ul .fa-solid
+{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+}
+
+.about-style
+{
+    font-size: 40px;
+}
+
+.about-c1, .about-c2
+{
+    flex-basis: 100%;
+}
+
+.tab-links
+{
+    font-size: 16px;
+    margin-right: 20px;
+}
+
+.contact-left, .contact-right
+{
+    flex-basis: 100%;
+}
+
+.about-c1 img 
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+.logo
+{
+    height: 100px;
+}
+}

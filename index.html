@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <title>Furqaan's Website</title>
+        <link rel="icon" href="./images/mf3.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Amiri&family=Ingrid+Darling&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+        <link   rel="stylesheet"    href="./style.css"/>
+    </head>
+    
+    <body>
+       <!------HOME-------->
+
+        <div id="header">
+            <div class="container">
+                
+                <nav>
+                    <img src="./images/mf1.png" class="logo" alt="mf logo">
+          
+                    <div class="nav-links">
+                        <ul id="sidemenu">
+                            <li> <a href="#header">Home</a> </li>
+                            <li> <a href="#about">About</a> </li>
+                            <li> <a href="#contact">Contact</a> </li>
+                            <i class="fa-solid fa-xmark" style="color: black;" onclick="closemenu()"></i>
+                        </ul>
+                        <i class="fa-solid fa-bars" style="color: #cfff04;" onclick="openmenu()"></i>
+                    </div>
+                </nav>
+                
+                <div class="headtext">
+                    
+                    <h1 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+                        <span class="multiple-text" style="color:#cfff04;" ></span>     <br>  I'm Mohammed <span id="name">Furqaan</span>
+                    </h1>
+
+                </div>
+            </div>
+        </div>
+
+        <!----ABOUT--->
+
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-c1">
+                        <img src="./images/me.png" alt="Furqaan">
+                    </div>
+                    <div class="about-c2">
+                    
+                        <h1 class="about-style">About Me</h1>
+                        <br>
+                        <p style="font-size: 20px;">
+                            I'm Furqaan, a dynamic individual with a relentless passion for cloud computing. Fueled by a fascination with cutting-edge technology, always eager to explore the boundless possibilities of the virtual realm. My insatiable appetite for challenges drives me to thrive in the face of complexity and to see obstacles as opportunities to learn and grow.
+                            <br><br>
+                            Armed with a thirst for innovation, I embark on creative endeavors, shaping original solutions and paving the way for transformative change. My dedication to learning and passion for innovation shine brightly in every aspect of my life, leaving an impact on those lucky enough to cross my path. 
+                        </p>
+
+                        <div class="tab-titles">
+                    
+                            <p class="tab-links active-link" onclick="opentab('Education')">Education</p>
+                            <p class="tab-links" onclick="opentab('Skills')">Skills</p>
+
+                        </div>
+                        <div class="tab-content active-tab" id="Education">
+                            <ul style="font-size: 20px;">
+                                <li> <span>2022-2026</span> <br> B.Tech Computer Science Engineering at <a href="https://pes.edu/tag/rr-campus/"  target="_blank" draggable="false">PES University</a> </li> <br>
+                                <li> <span>2020-2022</span> <br> Class 11-12 at <a href="https://npuc.cmr.ac.in/hrbr/"  target="_blank" draggable="false">CMR National PU College</a>  </li> <br>
+                                <li> <span>2010-2020</span> <br> Class 1-10 at <a href="https://baldwinboyshighschool.edu.in/"  target="_blank" draggable="false">Baldwin Boys' high School</a>  </li> <br>
+                            </ul>
+                        </div>
+
+                        <div class="tab-content" id="Skills">
+                            <ul style="font-size: 20px;">
+                                <li>Java</li> <br>
+                                <li>Python</li> <br>
+                                <li>C</li> <br>
+                                <li>C++</li> <br>
+                                <li>HTML</li> <br>
+                                <li>CSS</li> <br>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!---Contact-->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="about-style">Contact Me</h1>
+                        <p class="sign">Mohammed Furqaan</p>
+                        <p style="font-size: 30px;"><i class="fa-sharp fa-regular fa-envelope fa-xl" style="color: white;"></i> &nbsp;
+                            furqaanpatel2004@gmail.com</p>
+                            <br><br>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/mohammedfurqaan31/" target="_blank" draggable="false"><i class="fa-brands fa-linkedin-in fa-2xl" style="color: white;"></i></a> &nbsp;&nbsp;
+                            <a href="https://github.com/mfurqaan31" target="_blank" draggable="false"><i class="fa-brands fa-github fa-2xl" style="color: white;"></i></a>
+                            <br><br>
+                        </div>
+                    </div>
+                    <div class="contact-right"> 
+                        <form name="submit-to-google-sheet">
+                            <input type="text" autocomplete="off" name="name" placeholder="Your Name" required>
+                            <input type="email" autocomplete="off" name="email" placeholder="Your Email id" required>
+                            <textarea name="message" rows="6" placeholder="Your Message" ></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                            <span id="msg"></span>
+                        </form>
+                    </div>
+                      <script>
+                        const scriptURL = 'https://script.google.com/macros/s/AKfycbySR4oI2-WuS8BDAppcLVOnnNO9gDhssn3Dz_llY58-ps4b_Asqh8B05xDENfBZOGPS/exec'
+                        const form = document.forms['submit-to-google-sheet']
+                        const msg=document.getElementById('msg')
+                      
+                        form.addEventListener('submit', e => {
+                          e.preventDefault()
+                          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                            .then(response => {
+                                msg.innerHTML="Message sent successfully"
+                                setTimeout(function() {
+                                    msg.innerHTML=""
+                                },5000)
+                                form.reset()
+                            })
+                            .catch(error => console.error('Error!', error.message))
+                        })
+                      </script>
+
+                </div>
+                
+            </div>
+            <a href="#header" id="go-up" ><span class="material-symbols-outlined">
+                arrow_circle_up
+                </span></a>
+            <div id="copyright">
+                <p>Copyright &copy; 2023 Mohammed Furqaan</p>
+            </div>
+
+
+        </div>
+
+
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+        <script src="./script.js"></script>
+        
+        <script>
+            var sidem=document.getElementById("sidemenu");
+            function openmenu()
+            {
+                sidem.style.right="0";
+            }
+
+            function closemenu()
+            {
+                sidem.style.right="-200px";
+            }
+        </script>
+
+    
+    </body>
+
+</html>
