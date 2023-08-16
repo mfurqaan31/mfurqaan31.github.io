@@ -159,11 +159,6 @@ nav ul li a:hover::after
     font-weight: 600;
     color: #cfff04;
 }
-
-.intro{
-    font-size: 20px;
-}
-
 .tab-titles
 {
     display:flex;
@@ -452,9 +447,5 @@ nav ul .fa-solid
 .logo
 {
     height: 100px;
-}
-
-.intro{
-    font-size: 15px;
 }
 }
